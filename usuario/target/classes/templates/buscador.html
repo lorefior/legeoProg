@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>buscador</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body bgcolor=#F5AFCD>
+	<div style="text-align:center;">
+		<table width="30%" align="center" border="2" cellspacing="0" cellpadding="0" bgcolor=#7B879F>
+<tr>
+<td>
+	
+<fieldset> 
+                                    <h1>Busqueda de Usuario</h1>
+         <form action="#" th:action="@{/buscador}" th:object="${usuario}" method="post">
+             <p>Usuario:       <input type="text"      th:field="*{user}" /></p>
+       
+             <p><input type="submit" value="Buscar" /> <input type="reset" value="Resetear" /></p>
+      
+
+     
+   </form>  
+   </div>
+</td>
+</tr>
+</fieldset>
+</table>
+
+<table width="30%" align="center" border="2" cellspacing="1" cellpadding="1" bgcolor=#BBFE06>
+	<tr>
+<td>
+<a href="/login"><input type="submit" value="Iniciar Sesión" /></a> 
+</td>
+</tr>
+</table>
+</body>
+</html>
